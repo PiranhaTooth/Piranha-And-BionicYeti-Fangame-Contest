@@ -18,6 +18,7 @@
       <sound>sound\sndGlass</sound>
       <sound>sound\sndDialogue</sound>
       <sound>sound\sndSpikeTrap</sound>
+      <sound>sound\sndChamberOpen</sound>
     </sounds>
     <sounds name="music">
       <sound>sound\musOnDeath</sound>
@@ -93,6 +94,13 @@
       <sprite>sprites\sprSign</sprite>
       <sprite>sprites\sprGravityUp</sprite>
       <sprite>sprites\sprGravityDown</sprite>
+      <sprite>sprites\sprChamber</sprite>
+      <sprite>sprites\sprChamberStarted</sprite>
+      <sprite>sprites\sprChamberOpening</sprite>
+      <sprite>sprites\sprChamberOpened</sprite>
+      <sprite>sprites\sprBubble</sprite>
+      <sprite>sprites\sprStar</sprite>
+      <sprite>sprites\sprKidAsleep</sprite>
     </sprites>
     <sprites name="triggers">
       <sprite>sprites\sprTriggerMask</sprite>
@@ -113,6 +121,7 @@
     </sprites>
     <sprites name="warps">
       <sprite>sprites\sprWarp</sprite>
+      <sprite>sprites\sprBlackRectangle</sprite>
     </sprites>
     <sprites name="items">
       <sprite>sprites\sprSecretItem</sprite>
@@ -130,7 +139,6 @@
     <sprite>sprites\sprMiniPortal</sprite>
     <sprite>sprites\sprCloudsMiddle</sprite>
     <sprite>sprites\sprNewGameText</sprite>
-    <sprite>sprites\sprStar</sprite>
     <sprite>sprites\sprbionicyeti</sprite>
   </sprites>
   <backgrounds name="background">
@@ -168,6 +176,7 @@
     <background>background\bCloudsTop</background>
     <background>background\bCloudsMiddle</background>
     <background>background\bCloudsBottom</background>
+    <background>background\background30</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -331,6 +340,9 @@
       <object>objects\objSign</object>
       <object>objects\objGravityUp</object>
       <object>objects\objGravityDown</object>
+      <object>objects\objChamber</object>
+      <object>objects\objChamberBubble</object>
+      <object>objects\objKidAsleep</object>
     </objects>
     <objects name="saves">
       <object>objects\objSaveMedium</object>
@@ -347,6 +359,7 @@
       <object>objects\objWarpNext</object>
       <object>objects\objWarpAutosaveNext</object>
       <object>objects\objOutsideRoomChanger</object>
+      <object>objects\objBlackRectangleTransition</object>
     </objects>
     <objects name="items">
       <object>objects\objSecretItem</object>
@@ -375,7 +388,7 @@
       <room>rooms\rOptions</room>
     </rooms>
     <rooms name="sample">
-      <room>rooms\rRoom1</room>
+      <room>rooms\rRoomChamber</room>
     </rooms>
     <room>rooms\rTemplate</room>
   </rooms>

@@ -180,11 +180,14 @@ if scrButtonCheckPressed(global.menuAcceptButton)
         global.gameStarted = true; 
         global.autosave = true;            
         global.difficulty = 0;
-        audio_sound_gain(global.currentMusic,0.25,500);     
+        audio_sound_gain(global.currentMusic,0.25,500);    
+        //room_goto(global.startRoom);
+        
         if !instance_exists(objMenuTransition)
         {
             instance_create(0,0,objMenuTransition);
-        }                               
+        }  
+                                     
     }
     if selection = 1 and selected = false
     {
