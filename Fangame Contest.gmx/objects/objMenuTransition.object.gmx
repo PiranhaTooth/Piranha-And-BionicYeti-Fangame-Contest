@@ -225,6 +225,7 @@ if room = rNewGameCinematic2
     if lerping = true
     {
         viewSpd = lerp(viewSpd,0,0.05);
+        audio_sound_gain(musNewGameCinematic,0,1500)
     }
     if timer = 340
     {
@@ -267,10 +268,18 @@ if room = rRoomChamber
     {
         with objChamber
         {
+            sprite_index = sprChamberStarted
+        }
+    }
+    if timer = 485
+    {
+        with objChamber
+        {
             image_index = 0;
             image_speed = 1/3.5;
-            sprite_index = sprChamberOpening
+            sprite_index = sprChamberOpening;
         }
+        objKidAsleep.status = objKidAsleep.AWAKE;
     }
 }
 </string>

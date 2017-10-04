@@ -25,6 +25,7 @@
       <sound>sound\musGuyRock</sound>
       <sound>sound\musMegaman</sound>
       <sound>sound\musMiku</sound>
+      <sound>sound\musChamber</sound>
       <sound>sound\musNewGameCinematic</sound>
     </sounds>
     <sound>sound\sndAttack</sound>
@@ -101,6 +102,7 @@
       <sprite>sprites\sprBubble</sprite>
       <sprite>sprites\sprStar</sprite>
       <sprite>sprites\sprKidAsleep</sprite>
+      <sprite>sprites\sprKidAwake</sprite>
     </sprites>
     <sprites name="triggers">
       <sprite>sprites\sprTriggerMask</sprite>
@@ -129,6 +131,10 @@
     </sprites>
     <sprites name="dialogue">
       <sprite>sprites\sprKidPortrait</sprite>
+    </sprites>
+    <sprites name="lighting">
+      <sprite>sprites\sprLightCone</sprite>
+      <sprite>sprites\sprLight</sprite>
     </sprites>
     <sprite>sprites\spr_rain_test_block</sprite>
     <sprite>sprites\spr_texture_rain</sprite>
@@ -172,6 +178,7 @@
       <background>background\bSnowyGrassBackground1</background>
       <background>background\bSnowyGrassBackground2</background>
       <background>background\bSnowyGrassBackground3</background>
+      <background>background\bChamberWires</background>
     </backgrounds>
     <background>background\bCloudsTop</background>
     <background>background\bCloudsMiddle</background>
@@ -340,6 +347,7 @@
       <object>objects\objSign</object>
       <object>objects\objGravityUp</object>
       <object>objects\objGravityDown</object>
+      <object>objects\objChamberOpened</object>
       <object>objects\objChamber</object>
       <object>objects\objChamberBubble</object>
       <object>objects\objKidAsleep</object>
@@ -370,6 +378,10 @@
     </objects>
     <objects name="dialogue">
       <object>objects\objTextbox</object>
+    </objects>
+    <objects name="lighting">
+      <object>objects\objLight</object>
+      <object>objects\objLightingController</object>
     </objects>
     <object>objects\objPermaTrigger</object>
     <object>objects\objPermaTriggerSpikeUp</object>
